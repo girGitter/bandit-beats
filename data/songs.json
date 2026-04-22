@@ -1,0 +1,132 @@
+[
+  {
+    "id": "s001",
+    "title": "Sunrise Vibes",
+    "artist": "Chill Wave",
+    "genre": "Lo-fi",
+    "bpm": 75,
+    "tags": ["calm", "morning", "study"],
+    "preferred_contexts": {
+      "mood": ["happy"],
+      "activity": ["study", "relax"],
+      "time": ["morning"]
+    }
+  },
+  {
+    "id": "s002",
+    "title": "Midnight Drive",
+    "artist": "Neon Pulse",
+    "genre": "Synthwave",
+    "bpm": 110,
+    "tags": ["night", "energetic", "drive"],
+    "preferred_contexts": {
+      "mood": ["energetic"],
+      "activity": ["gym"],
+      "time": ["night"]
+    }
+  },
+  {
+    "id": "s003",
+    "title": "Rain & Coffee",
+    "artist": "Acoustic Blend",
+    "genre": "Acoustic",
+    "bpm": 65,
+    "tags": ["sad", "calm", "rain"],
+    "preferred_contexts": {
+      "mood": ["sad"],
+      "activity": ["relax", "study"],
+      "time": ["morning", "evening"]
+    }
+  },
+  {
+    "id": "s004",
+    "title": "Power Hour",
+    "artist": "BeatForge",
+    "genre": "EDM",
+    "bpm": 140,
+    "tags": ["pump", "gym", "energetic"],
+    "preferred_contexts": {
+      "mood": ["energetic"],
+      "activity": ["gym"],
+      "time": ["morning", "evening"]
+    }
+  },
+  {
+    "id": "s005",
+    "title": "Deep Focus",
+    "artist": "Ambient Space",
+    "genre": "Ambient",
+    "bpm": 60,
+    "tags": ["focus", "study", "calm"],
+    "preferred_contexts": {
+      "mood": ["happy", "sad"],
+      "activity": ["study"],
+      "time": ["morning", "evening", "night"]
+    }
+  },
+  {
+    "id": "s006",
+    "title": "Evening Jazz",
+    "artist": "Velvet Trio",
+    "genre": "Jazz",
+    "bpm": 90,
+    "tags": ["relax", "evening", "smooth"],
+    "preferred_contexts": {
+      "mood": ["happy", "sad"],
+      "activity": ["relax"],
+      "time": ["evening"]
+    }
+  },
+  {
+    "id": "s007",
+    "title": "Neon Jungle",
+    "artist": "Cyber Rhythm",
+    "genre": "Electronic",
+    "bpm": 128,
+    "tags": ["energetic", "night", "gym"],
+    "preferred_contexts": {
+      "mood": ["energetic"],
+      "activity": ["gym"],
+      "time": ["night"]
+    }
+  },
+  {
+    "id": "s008",
+    "title": "Soft Glow",
+    "artist": "Dream Echo",
+    "genre": "Chillout",
+    "bpm": 80,
+    "tags": ["relax", "evening", "happy"],
+    "preferred_contexts": {
+      "mood": ["happy"],
+      "activity": ["relax"],
+      "time": ["evening", "night"]
+    }
+  },
+  {
+    "id": "s009",
+    "title": "Storm Protocol",
+    "artist": "Iron Circuit",
+    "genre": "Metal",
+    "bpm": 165,
+    "tags": ["aggressive", "gym", "energetic"],
+    "preferred_contexts": {
+      "mood": ["energetic"],
+      "activity": ["gym"],
+      "time": ["morning", "evening"]
+    }
+  },
+  {
+    "id": "s010",
+    "title": "Twilight Serenade",
+    "artist": "Luna Keys",
+    "genre": "Classical",
+    "bpm": 55,
+    "tags": ["sad", "calm", "night"],
+    "preferred_contexts": {
+      "mood": ["sad"],
+      "activity": ["relax", "study"],
+      "time": ["night", "evening"]
+    }
+  }
+]
