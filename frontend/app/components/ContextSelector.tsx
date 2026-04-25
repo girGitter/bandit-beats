@@ -53,11 +53,11 @@ function PillGroup<T extends string>({
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => onSelect(opt.value)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-all border
+          className={`px-4 py-2 rounded-none text-sm font-medium transition-all border
             ${
               selected === opt.value
-                ? "bg-neon-green/20 border-neon-green text-neon-green shadow-[0_0_8px_#39ff14]"
-                : "bg-white/5 border-white/10 text-gray-400 hover:border-white/30"
+                ? "bg-[#FF3B00] border-[#FF3B00] text-white"
+                : "bg-transparent border-[#222] text-gray-400 hover:border-[#555]"
             }`}
         >
           {opt.emoji} {opt.label}
@@ -116,11 +116,11 @@ export default function ContextSelector({
               whileHover={{ scale: 1.06 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => onAlgorithm(alg)}
-              className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-all border
+              className={`flex-1 py-2 rounded-none text-sm font-semibold transition-all border
                 ${
                   algorithm === alg
-                    ? "bg-purple-500/20 border-purple-400 text-purple-300 shadow-[0_0_10px_#bf5fff]"
-                    : "bg-white/5 border-white/10 text-gray-400 hover:border-white/30"
+                    ? "bg-[#1D00FF] border-[#1D00FF] text-white"
+                    : "bg-transparent border-[#222] text-gray-400 hover:border-[#555]"
                 }`}
             >
               {alg === "epsilon_greedy" ? "ε-Greedy" : "UCB"}

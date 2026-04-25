@@ -68,8 +68,8 @@ def reward_curve_chart(
     """
     traces = []
     colours = {
-        "epsilon_greedy": "#39ff14",   # neon green
-        "ucb": "#bf5fff",              # electric purple
+        "epsilon_greedy": "#FF3B00",
+        "ucb": "#1D00FF",
     }
 
     for name, history in agents.items():
@@ -109,8 +109,8 @@ def regret_curve_chart(
     """
     traces = []
     colours = {
-        "epsilon_greedy": "#39ff14",
-        "ucb": "#bf5fff",
+        "epsilon_greedy": "#FF3B00",
+        "ucb": "#1D00FF",
     }
 
     for name, history in agents.items():
@@ -151,8 +151,8 @@ def algorithm_comparison_chart(
     final_avgs = []
     colours_list = []
     colour_map = {
-        "epsilon_greedy": "#39ff14",
-        "ucb": "#bf5fff",
+        "epsilon_greedy": "#FF3B00",
+        "ucb": "#1D00FF",
     }
 
     for name, history in agents.items():

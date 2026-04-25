@@ -15,6 +15,13 @@ export interface Song {
   genre: string;
   bpm: number;
   tags: string[];
+  album?: string;
+  album_art?: string;
+  spotify_id?: string;
+  embed_url?: string;
+  preview_url?: string;
+  external_url?: string;
+  duration_ms?: number;
 }
 
 export interface RecommendResponse {

@@ -1,132 +1,253 @@
 [
   {
     "id": "s001",
-    "title": "Sunrise Vibes",
-    "artist": "Chill Wave",
-    "genre": "Lo-fi",
-    "bpm": 75,
-    "tags": ["calm", "morning", "study"],
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "genre": "Synthwave",
+    "bpm": 171,
+    "tags": [
+      "energetic",
+      "night",
+      "gym"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b4/8f/17b48f9a-0b93-6bb8-fe1d-3a16623c2cfb/mzaf_9560252727299052414.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["happy"],
-      "activity": ["study", "relax"],
-      "time": ["morning"]
+      "mood": [
+        "energetic"
+      ],
+      "activity": [
+        "gym"
+      ],
+      "time": [
+        "night",
+        "evening"
+      ]
     }
   },
   {
     "id": "s002",
-    "title": "Midnight Drive",
-    "artist": "Neon Pulse",
-    "genre": "Synthwave",
-    "bpm": 110,
-    "tags": ["night", "energetic", "drive"],
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "genre": "Pop",
+    "bpm": 170,
+    "tags": [
+      "happy",
+      "summer",
+      "morning"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["energetic"],
-      "activity": ["gym"],
-      "time": ["night"]
+      "mood": [
+        "happy"
+      ],
+      "activity": [
+        "relax",
+        "gym"
+      ],
+      "time": [
+        "morning",
+        "evening"
+      ]
     }
   },
   {
     "id": "s003",
-    "title": "Rain & Coffee",
-    "artist": "Acoustic Blend",
-    "genre": "Acoustic",
-    "bpm": 65,
-    "tags": ["sad", "calm", "rain"],
+    "title": "God's Plan",
+    "artist": "Drake",
+    "genre": "Hip Hop",
+    "bpm": 77,
+    "tags": [
+      "hype",
+      "gym"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/da/7d/f1/da7df14b-8ee6-5020-d850-ccc0381eb141/mzaf_5511967710095380808.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["sad"],
-      "activity": ["relax", "study"],
-      "time": ["morning", "evening"]
+      "mood": [
+        "energetic"
+      ],
+      "activity": [
+        "gym"
+      ],
+      "time": [
+        "evening",
+        "night"
+      ]
     }
   },
   {
     "id": "s004",
-    "title": "Power Hour",
-    "artist": "BeatForge",
-    "genre": "EDM",
-    "bpm": 140,
-    "tags": ["pump", "gym", "energetic"],
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "genre": "Pop/Soul",
+    "bpm": 67,
+    "tags": [
+      "sad",
+      "calm"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/18/7b/ef187b7d-f487-e935-4ca1-af5748313710/mzaf_8455263230305249048.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["energetic"],
-      "activity": ["gym"],
-      "time": ["morning", "evening"]
+      "mood": [
+        "sad"
+      ],
+      "activity": [
+        "relax",
+        "study"
+      ],
+      "time": [
+        "night",
+        "evening"
+      ]
     }
   },
   {
     "id": "s005",
-    "title": "Deep Focus",
-    "artist": "Ambient Space",
-    "genre": "Ambient",
-    "bpm": 60,
-    "tags": ["focus", "study", "calm"],
+    "title": "Lose Yourself",
+    "artist": "Eminem",
+    "genre": "Rap",
+    "bpm": 171,
+    "tags": [
+      "gym",
+      "aggressive"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/0a/a5/620aa56f-189e-708a-80f0-cebdada3872e/mzaf_7131619873177773332.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["happy", "sad"],
-      "activity": ["study"],
-      "time": ["morning", "evening", "night"]
+      "mood": [
+        "energetic"
+      ],
+      "activity": [
+        "gym"
+      ],
+      "time": [
+        "morning",
+        "evening"
+      ]
     }
   },
   {
     "id": "s006",
-    "title": "Evening Jazz",
-    "artist": "Velvet Trio",
-    "genre": "Jazz",
-    "bpm": 90,
-    "tags": ["relax", "evening", "smooth"],
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "genre": "Indie Pop",
+    "bpm": 174,
+    "tags": [
+      "happy",
+      "upbeat"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["happy", "sad"],
-      "activity": ["relax"],
-      "time": ["evening"]
+      "mood": [
+        "happy"
+      ],
+      "activity": [
+        "relax",
+        "study"
+      ],
+      "time": [
+        "morning"
+      ]
     }
   },
   {
     "id": "s007",
-    "title": "Neon Jungle",
-    "artist": "Cyber Rhythm",
-    "genre": "Electronic",
-    "bpm": 128,
-    "tags": ["energetic", "night", "gym"],
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "genre": "Dance Pop",
+    "bpm": 103,
+    "tags": [
+      "dance",
+      "party",
+      "energetic"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["energetic"],
-      "activity": ["gym"],
-      "time": ["night"]
+      "mood": [
+        "happy",
+        "energetic"
+      ],
+      "activity": [
+        "gym"
+      ],
+      "time": [
+        "night"
+      ]
     }
   },
   {
     "id": "s008",
-    "title": "Soft Glow",
-    "artist": "Dream Echo",
-    "genre": "Chillout",
-    "bpm": 80,
-    "tags": ["relax", "evening", "happy"],
+    "title": "Good Days",
+    "artist": "SZA",
+    "genre": "R&B",
+    "bpm": 121,
+    "tags": [
+      "calm",
+      "focus",
+      "study"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/32/fe/9b32fec3-fbfb-db0f-3dcf-bb089d412f23/mzaf_15200324731067771849.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["happy"],
-      "activity": ["relax"],
-      "time": ["evening", "night"]
+      "mood": [
+        "sad",
+        "happy"
+      ],
+      "activity": [
+        "study",
+        "relax"
+      ],
+      "time": [
+        "morning",
+        "afternoon"
+      ]
     }
   },
   {
     "id": "s009",
-    "title": "Storm Protocol",
-    "artist": "Iron Circuit",
-    "genre": "Metal",
-    "bpm": 165,
-    "tags": ["aggressive", "gym", "energetic"],
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "genre": "Alt Indie",
+    "bpm": 124,
+    "tags": [
+      "sad",
+      "chill",
+      "night"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["energetic"],
-      "activity": ["gym"],
-      "time": ["morning", "evening"]
+      "mood": [
+        "sad"
+      ],
+      "activity": [
+        "relax",
+        "study"
+      ],
+      "time": [
+        "night",
+        "evening"
+      ]
     }
   },
   {
     "id": "s010",
-    "title": "Twilight Serenade",
-    "artist": "Luna Keys",
-    "genre": "Classical",
-    "bpm": 55,
-    "tags": ["sad", "calm", "night"],
+    "title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+    "artist": "Post Malone & Swae Lee",
+    "genre": "Pop Rap",
+    "bpm": 90,
+    "tags": [
+      "happy",
+      "chill"
+    ],
+    "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/db/b1/9fdbb10d-2d33-3cd4-48e9-7f745521cfdf/mzaf_15956051401758554866.plus.aac.p.m4a",
     "preferred_contexts": {
-      "mood": ["sad"],
-      "activity": ["relax", "study"],
-      "time": ["night", "evening"]
+      "mood": [
+        "happy"
+      ],
+      "activity": [
+        "relax",
+        "study"
+      ],
+      "time": [
+        "morning",
+        "evening"
+      ]
     }
   }
 ]

@@ -73,6 +73,7 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
   // Refresh live charts when feedback is sent
   useEffect(() => {
     if (mode === "live") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       loadLiveCharts();
     }
   }, [refreshTrigger, mode, loadLiveCharts]);
@@ -80,6 +81,7 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
   // Load simulation on mount
   useEffect(() => {
     if (mode === "sim") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       loadSimulation();
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -102,7 +104,7 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
     >
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-3">
-        <h2 className="text-xl font-bold text-white tracking-wide glow-text">
+        <h2 className="text-xl font-bold text-white tracking-wide uppercase">
           📊 Analytics Dashboard
         </h2>
 
@@ -112,10 +114,10 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
             <button
               key={m}
               onClick={() => setMode(m)}
-              className={`px-3 py-1 rounded-full border transition-all ${
+              className={`px-3 py-1 rounded-none border transition-all ${
                 mode === m
-                  ? "border-cyan-400 text-cyan-300 bg-cyan-400/10"
-                  : "border-white/10 text-gray-500 hover:border-white/20"
+                  ? "bg-[#1D00FF] border-[#1D00FF] text-white"
+                  : "bg-transparent border-[#222] text-gray-500 hover:border-[#555]"
               }`}
             >
               {m === "sim" ? "🤖 Simulation" : "⚡ Live"}
@@ -132,7 +134,7 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
             <select
               value={nSteps}
               onChange={(e) => setNSteps(Number(e.target.value))}
-              className="bg-white/5 border border-white/10 rounded px-2 py-1 text-sm text-white"
+              className="bg-transparent border border-[#333] rounded-none px-2 py-1 text-sm text-white"
             >
               {[100, 200, 300, 500, 1000].map((n) => (
                 <option key={n} value={n}>{n}</option>
@@ -144,18 +146,17 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
             whileTap={{ scale: 0.96 }}
             onClick={loadSimulation}
             disabled={loading}
-            className="px-4 py-1.5 rounded-lg text-sm font-semibold bg-purple-500/20 border border-purple-400
-              text-purple-300 hover:shadow-[0_0_10px_#bf5fff] transition-shadow disabled:opacity-50"
+            className="px-4 py-1.5 rounded-none text-sm font-semibold border border-[#FF3B00] text-[#FF3B00] hover:bg-[#FF3B00] hover:text-white transition-all disabled:opacity-50 uppercase tracking-wider"
           >
             {loading ? "Running…" : "▶ Run Simulation"}
           </motion.button>
           {simResult && (
-            <div className="flex gap-4 text-xs text-gray-400">
+            <div className="flex gap-4 text-xs text-gray-400 mt-2">
               <span>
-                ε-Greedy avg: <span className="text-neon-green font-bold">{simResult.epsilon_greedy.final_avg_reward.toFixed(3)}</span>
+                ε-Greedy avg: <span className="text-[#FF3B00] font-bold">{simResult.epsilon_greedy.final_avg_reward.toFixed(3)}</span>
               </span>
               <span>
-                UCB avg: <span className="text-purple-300 font-bold">{simResult.ucb.final_avg_reward.toFixed(3)}</span>
+                UCB avg: <span className="text-[#1D00FF] font-bold">{simResult.ucb.final_avg_reward.toFixed(3)}</span>
               </span>
             </div>
           )}
@@ -168,10 +169,10 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
           <button
             key={t.id}
             onClick={() => setTab(t.id)}
-            className={`px-4 py-1.5 text-sm rounded-t transition-all ${
+            className={`px-4 py-1.5 text-sm rounded-none transition-all ${
               tab === t.id
-                ? "text-neon-green border-b-2 border-neon-green"
-                : "text-gray-500 hover:text-gray-300"
+                ? "text-[#FF3B00] border-b-2 border-[#FF3B00]"
+                : "text-gray-500 hover:text-gray-300 border-b-2 border-transparent"
             }`}
           >
             {t.label}
@@ -183,14 +184,13 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
       <div className="relative min-h-[320px]">
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center z-10">
-            <div className="w-10 h-10 border-2 border-purple-400 border-t-transparent rounded-full animate-spin" />
+            <div className="w-10 h-10 border-2 border-[#1D00FF] border-t-transparent rounded-full animate-spin" />
           </div>
         )}
         {activeChart ? (
           <Plot
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             data={activeChart.data as any[]}
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             layout={{
               ...activeChart.layout,
               ...baseLayout,
@@ -215,10 +215,10 @@ export default function Dashboard({ refreshTrigger }: { refreshTrigger: number }
       {/* Legend explainer */}
       <div className="flex gap-4 text-xs text-gray-500 justify-center flex-wrap pt-1">
         <span className="flex items-center gap-1.5">
-          <span className="w-4 h-1 rounded bg-[#39ff14] inline-block" /> ε-Greedy
+          <span className="w-4 h-1 rounded-none bg-[#FF3B00] inline-block" /> ε-Greedy
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="w-4 h-1 rounded bg-[#bf5fff] inline-block" /> UCB
+          <span className="w-4 h-1 rounded-none bg-[#1D00FF] inline-block" /> UCB
         </span>
       </div>
     </motion.div>

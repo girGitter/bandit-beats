@@ -2,14 +2,14 @@
 
 /* ── Design tokens ─────────────────────────────────── */
 :root {
-  --bg:           #0a0a0a;
-  --bg-card:      rgba(255, 255, 255, 0.04);
-  --border:       rgba(255, 255, 255, 0.08);
-  --neon-green:   #39ff14;
-  --purple:       #bf5fff;
-  --cyan:         #00e5ff;
-  --text:         #e0e0e0;
-  --text-muted:   #6b7280;
+  --bg:           #050505;
+  --bg-card:      #0a0a0a;
+  --border:       #222222;
+  --neon-green:   #FF3B00;
+  --purple:       #1D00FF;
+  --cyan:         #ffffff;
+  --text:         #ffffff;
+  --text-muted:   #888888;
 }
 
 @theme inline {
@@ -46,54 +46,51 @@ body {
 .glass-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 1rem;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border-radius: 0;
 }
 
 .glow-text {
-  text-shadow: 0 0 12px rgba(57, 255, 20, 0.4);
+  /* Removed glow for minimalistic look */
 }
 
 /* Feedback buttons */
 .btn-green {
-  background: rgba(57, 255, 20, 0.12);
-  border: 1px solid rgba(57, 255, 20, 0.4);
+  background: transparent;
+  border: 1px solid var(--neon-green);
   color: var(--neon-green);
-  transition: box-shadow 0.2s;
+  border-radius: 0;
+  transition: all 0.2s;
 }
 .btn-green:hover {
-  box-shadow: 0 0 14px rgba(57, 255, 20, 0.35);
+  background: var(--neon-green);
+  color: #000;
 }
 
 .btn-red {
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.4);
-  color: #f87171;
-  transition: box-shadow 0.2s;
+  background: transparent;
+  border: 1px solid #555;
+  color: #888;
+  border-radius: 0;
+  transition: all 0.2s;
 }
 .btn-red:hover {
-  box-shadow: 0 0 14px rgba(239, 68, 68, 0.3);
+  background: #333;
+  color: #fff;
 }
 
 .btn-cyan {
-  background: rgba(0, 229, 255, 0.12);
-  border: 1px solid rgba(0, 229, 255, 0.4);
-  color: var(--cyan);
-  transition: box-shadow 0.2s;
+  background: transparent;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  border-radius: 0;
+  transition: all 0.2s;
 }
 .btn-cyan:hover {
-  box-shadow: 0 0 14px rgba(0, 229, 255, 0.3);
+  background: var(--purple);
+  color: #fff;
 }
 
-/* Animated gradient background */
+/* Animated gradient background removed for minimalistic look */
 .bg-animated {
-  background:
-    radial-gradient(ellipse at 10% 20%, rgba(57, 255, 20, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 90% 80%, rgba(191, 95, 255, 0.07) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(0, 229, 255, 0.04) 0%, transparent 70%),
-    #0a0a0a;
+  background: var(--bg);
 }

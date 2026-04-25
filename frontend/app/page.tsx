@@ -92,13 +92,13 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            <span className="text-[#39ff14] drop-shadow-[0_0_12px_#39ff14]">Bandit</span>
-            <span className="text-white"> Beats</span>
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight uppercase">
+            <span className="text-[#FF3B00]">Bandit</span>
+            <span className="text-white"> Beats.</span>
           </h1>
-          <p className="mt-2 text-gray-400 text-sm md:text-base max-w-xl mx-auto">
+          <p className="mt-2 text-gray-400 text-sm md:text-base max-w-xl mx-auto uppercase tracking-widest text-xs mt-4">
             Context-aware music recommendations powered by{" "}
-            <span className="text-[#bf5fff] font-semibold">multi-armed bandit</span>{" "}
+            <span className="text-[#1D00FF] font-semibold">multi-armed bandit</span>{" "}
             reinforcement learning
           </p>
         </motion.div>
